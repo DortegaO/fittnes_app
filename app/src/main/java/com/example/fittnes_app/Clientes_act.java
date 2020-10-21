@@ -13,6 +13,8 @@ import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
+import Clases.Planes;
+
 public class Clientes_act extends AppCompatActivity {
 
     private Spinner spin1,spin2;
@@ -45,16 +47,41 @@ public class Clientes_act extends AppCompatActivity {
         String cliente = spin1.getSelectedItem().toString();
         String planes = spin2.getSelectedItem().toString();
 
+        Planes plan = new Planes();  // Construir mi objeto.
+
+        int saldo = Integer.parseInt(edit.getText().toString());
+
+        int resultPremiun = saldo - plan.getPremiun();
+        int resultNormal = saldo - plan.getNormal();
+
+
+
         if(cliente.equals("roberto") && planes.equals("normal"))
         {
-            text.setText("el valor es");
+            text.setText("El precio del plan es: " + resultNormal);
 
+        }
+        if(cliente.equals("roberto") && planes.equals("premiun"))
+        {
+            text.setText("El precio del plan es: " + resultPremiun);
+        }
+
+        if(cliente.equals("ivan") && planes.equals("normal"))
+        {
+            text.setText("El precio del plan es: " + resultNormal);
+
+        }
+        if(cliente.equals("ivan") && planes.equals("premiun"))
+        {
+            text.setText("El precio del plan es: " + resultPremiun);
         }
 
 
-
-
     }
+
+
+
+
 
 
 }

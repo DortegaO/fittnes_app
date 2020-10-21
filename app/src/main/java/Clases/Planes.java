@@ -1,27 +1,25 @@
 package Clases;
 
 public class Planes {
-    private String  premiun;
-    private String normal;
+    private int  premiun;
+    private int normal;
 
     public Planes()
     {
 
-        premiun ="12000";
-        normal = "24000";
+        premiun = 12000;
+        normal = 24000;
 
     }
 
-    public String getPremiun()
+    public int getPremiun()
     {
         return premiun;
-
     }
 
-    public String getNormal()
+    public int getNormal()
     {
         return normal;
-
     }
 
 

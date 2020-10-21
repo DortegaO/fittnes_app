@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         pb = (ProgressBar)findViewById(R.id.pb);
         btn = (Button)findViewById(R.id.btn);
         pb.setVisibility(View.INVISIBLE);
@@ -30,9 +31,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-    }
+        }
 
 
     class Task extends AsyncTask<String,Void,String>

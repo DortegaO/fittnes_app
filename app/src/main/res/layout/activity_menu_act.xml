@@ -56,6 +56,7 @@
                     android:layout_height="121dp"
                     android:layout_marginStart="2dp"
                     android:layout_marginLeft="2dp"
+                    android:onClick="Base"
                     app:layout_constraintStart_toEndOf="@+id/bt1"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/bd_men" />
